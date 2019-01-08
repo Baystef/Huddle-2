@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+
+:root {
+    --primary-color: hsl(322, 100%, 66%);
+    --neutral-1: hsl(192, 100%, 9%);
+    --neutral-2: hsl(207, 100%, 98%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.main-nav {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav__brand {
+    margin-right: auto;
+}
+
+.main-nav__brand img {
+    height: 1.25rem; 
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.main-nav__item {
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    padding: 0.25rem 1rem;
+}
+
+.wrapper {
+    display: grid;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro-header {
+    background-image: url('images/screen-mockups.svg');
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20rem;
+}
+
+.statistics {
+    text-align: center;
+}
+
+.stat {
+    margin: 4rem 0;
+    padding: 0;
+}
+
+.stat-icon {
+    height: 1rem;
+    position: relative;
+    right: 20%;
+}
+
+.stat-value {
+    font-size: 4rem;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
