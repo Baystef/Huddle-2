@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:700');
 
-
+/* general styles */
 :root {
     --primary-color: hsl(322, 100%, 66%);
     --neutral-1: hsl(192, 100%, 9%);
@@ -27,6 +27,7 @@ body {
 
 h1 {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 .button {
@@ -43,6 +44,7 @@ h1 {
     width: 100%;
 }
 
+/* nav styles */
 .main-nav {
     background-color: white;
     width: 100%;
@@ -92,7 +94,7 @@ h1 {
 .intro {
     text-align: center;
     margin: 3rem 0;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
 }
 
 .intro-header {
@@ -235,21 +237,28 @@ h1 {
 .social-icons {
     display: flex;
     color: white;
-    width: 7.5rem;
-    justify-content: space-between;
+    width: 8rem;
+    /* justify-content: space-between; */
     cursor: pointer;
 }
 
 .social-icon {
-    border: 1px solid white;
-    width: 2rem;
-    height: 2rem;
+    width: 5rem;
+    height: 5rem;
     text-align: center;
-    padding: 0.5rem;
+    padding-right: 1rem;
+}
+
+.social-icon:hover {
+    opacity: 0.6;
 }
 
 /* Desktop Styles */
 @media (min-width: 40rem) {
+
+    .intro-text {
+        margin: 0.5rem 30rem;
+    }
 
     .intro-header {
         height: 40rem;
@@ -306,8 +315,6 @@ h1 {
    }
 
    .newsletter-text, .footer-text {
-       /* padding-right: 5rem;
-       margin-right: 5rem; */
        width: 51%;
    }
 }
