@@ -29,6 +29,20 @@ h1 {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+.button {
+    padding: 0.5rem 2rem;
+    border: 0;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 1px 2px 4px #b3b0b0;
+    cursor: pointer;
+}
+
+.curve {
+    width: 100%;
+}
+
 .main-nav {
     background-color: white;
     width: 100%;
@@ -47,10 +61,6 @@ h1 {
 
 .main-nav__brand img {
     height: 1.25rem; 
-}
-
-.main-nav__brand img path {
-    color: white;
 }
 
 .main-nav__items {
@@ -81,6 +91,8 @@ h1 {
 
 .intro {
     text-align: center;
+    margin: 3rem 0;
+    padding: 2rem 1rem;
 }
 
 .intro-header {
@@ -144,9 +156,13 @@ h1 {
 .build {
     height: 20rem;
     width: 100%;
-    display: flex;
-    align-items: center;
+    margin: 0 auto;
     text-align: center;
+    padding: 2rem 1rem;
+}
+
+.footer-curve__top {
+    margin-bottom: -0.3rem;
 }
 
 .footer {
@@ -171,17 +187,21 @@ h1 {
 
 .newsletter-subscribe__input {
     border: 0;
-    padding: 0.75rem 1rem;
-    border-radius: 3px;
+    padding: 1rem 1rem;
+    border-radius: 5px;
 }
 
 .newsletter-subscribe__button {
     width: 50%;
     align-self: flex-end;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px;
+    margin-top: 1rem;
 }
 
-.footer-logo__container {
-    height: 1rem
+.footer-logo {
+    margin-top: 4rem;
 }
 
 .footer-logo path {
@@ -224,7 +244,70 @@ h1 {
     border: 1px solid white;
     width: 2rem;
     height: 2rem;
-    border-radius: 50%;
     text-align: center;
     padding: 0.5rem;
+}
+
+/* Desktop Styles */
+@media (min-width: 40rem) {
+
+    .intro-header {
+        height: 40rem;
+        background-size: 60%;
+    }
+
+    .statistics {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    .section-header {
+        background-size: 50%;
+    }
+
+    .section-header__grow, .section-header__users {
+        order: 2;
+    }
+
+    .section-info__grow, .section-info__conversations, .section-info__users {
+        margin: auto 2rem;
+        padding: 2rem;
+    }
+
+   .footer {
+       display: flex;
+       align-items: center;
+   }
+
+   .newsletter {
+       order: 2;
+   }
+
+   .newsletter-form {
+       flex-direction: row;
+       align-items: center;
+       width: 80%;
+   }
+
+   .newsletter-subscribe__input {
+       flex: 2;
+   }
+
+   .newsletter-subscribe__button {
+       flex: 1;
+       margin-top: 0;
+       margin-left: 1.5rem;
+   }
+
+   .newsletter-text, .footer-text {
+       /* padding-right: 5rem;
+       margin-right: 5rem; */
+       width: 51%;
+   }
 }
