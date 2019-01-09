@@ -49,6 +49,10 @@ h1 {
     height: 1.25rem; 
 }
 
+.main-nav__brand img path {
+    color: white;
+}
+
 .main-nav__items {
     margin: 0;
     padding: 0;
@@ -107,4 +111,120 @@ h1 {
     font-weight: 900;
     padding: 0;
     margin: 0;
+}
+
+.section {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.section-header {
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20rem;
+}
+
+.section-header__grow {
+    background-image: url('images/illustration-grow-together.svg');
+}
+
+.section-header__conversations {
+    background-image: url('images/illustration-flowing-conversation.svg');
+}
+
+.section-header__users {
+    background-image: url('images/illustration-your-users.svg');
+}
+
+.grow, .users {
+    background: var(--neutral-2);
+}
+
+.build {
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footer {
+    color: white;
+    padding: 3rem 2rem;
+    background-color: var(--neutral-1);
+}
+
+.newsletter {
+    margin-bottom: 3rem;
+}
+
+.newsletter-header {
+    text-transform: uppercase;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.newsletter-subscribe__input {
+    border: 0;
+    padding: 0.75rem 1rem;
+    border-radius: 3px;
+}
+
+.newsletter-subscribe__button {
+    width: 50%;
+    align-self: flex-end;
+}
+
+.footer-logo__container {
+    height: 1rem
+}
+
+.footer-logo path {
+    fill: #ffffff;
+}
+
+.footer-text {
+    line-height: 1.5;
+}
+
+.contact {
+    margin: 1rem 0;
+}
+
+.email-phone {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.email-phone p {
+    padding: 0;
+}
+
+.email-phone img {
+    height: 100%;
+    margin-right: 0.8rem;
+}
+
+.social-icons {
+    display: flex;
+    color: white;
+    width: 7.5rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.social-icon {
+    border: 1px solid white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.5rem;
 }
