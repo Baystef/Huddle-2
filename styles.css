@@ -191,13 +191,15 @@ h1 {
 }
 
 .footer-curve__top {
-    margin-bottom: -0.32rem;
+    margin-bottom: -0.33rem;
+    padding: 0;
 }
 
 .footer {
     color: white;
     padding: 3rem 2rem;
     background-color: var(--neutral-1);
+    margin-top: -0.13rem;
 }
 
 .newsletter {
