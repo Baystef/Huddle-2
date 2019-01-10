@@ -38,6 +38,15 @@ h1 {
     color: white;
     box-shadow: 1px 2px 4px #b3b0b0;
     cursor: pointer;
+    transition:  all 0.2s ease-in;
+}
+
+.button:hover {
+    box-shadow: 2px 4px 5px #b3b0b0;
+}
+
+.button:active {
+    box-shadow: 0px 0px 0px #b3b0b0;
 }
 
 .curve {
@@ -83,13 +92,18 @@ h1 {
     border: 1px solid var(--primary-color);
     border-radius: 1rem;
     padding: 0.25rem 1rem;
-    transition: all 0.3s ease-in;
-    animation: bounce 1s infinite alternate ease-in forwards 2s; 
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    animation: bounce 1.2s 20 alternate ease-in forwards 2s; 
 }
 
 .main-nav__item a:hover {
+    box-shadow: 1px 2px 4px var(--neutral-1);
     background-color: var(--primary-color);
     color: white;
+}
+
+.main-nav__item a:active {
+    box-shadow: 0px 0px 0px;
 }
 
 .wrapper {
@@ -215,6 +229,12 @@ h1 {
     margin-top: 1rem;
 }
 
+.newsletter-subscribe__button:hover {
+    background-color: white;
+    color: var(--primary-color);
+    box-shadow: 0px 0px 0px;
+}
+
 .footer-logo {
     margin-top: 4rem;
 }
@@ -280,6 +300,10 @@ h1 {
 
 /* Desktop Styles */
 @media (min-width: 40rem) {
+
+    .main-nav {
+        padding: 0.5rem 2rem;
+    }
 
     .intro-text {
         margin: 0.5rem 30rem;
